@@ -1,6 +1,6 @@
 # nginx-proxy-manager Dockerfile
 #
-# https://github.com/jlesage/docker-nginx-proxy-manager
+# https://github.com/NginxProxyManager/nginx-proxy-manager
 #
 
 # Pull base image.
@@ -10,7 +10,7 @@ FROM alpine:3.16
 ARG NGINX_PROXY_MANAGER_VERSION=2.10.4
 
 # Define environment variables.
-ENV DOCKER_IMAGE_NAME=jlesage/nginx-proxy-manager
+ENV DOCKER_IMAGE_NAME=stinkfizzle/nginx-proxy-manager
 
 # Define working directory.
 WORKDIR /tmp
