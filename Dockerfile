@@ -35,7 +35,7 @@ ADD https://github.com/jc21/nginx-proxy-manager/archive/v${NGINX_PROXY_MANAGER_V
 # Install and configure Nginx Proxy Manager.
 RUN tar xzf nginx-proxy-manager.tar.gz
 RUN mv nginx-proxy-manager-* nginx-proxy-manager
-RUN cd nginx-proxy-manager && npm install
+RUN cd nginx-proxy-manager && npm install --verbose
 RUN cd nginx-proxy-manager && npm run build
 RUN cd nginx-proxy-manager && npm prune --production
 
