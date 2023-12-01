@@ -1,4 +1,4 @@
-# nginx-proxy-manager Dockerfile
+# nginx-proxy-manager Dockerfile.
 #
 # https://github.com/NginxProxyManager/nginx-proxy-manager
 #
@@ -31,7 +31,7 @@ RUN apk add --no-cache \
 # Add Nginx Proxy Manager source.
 ADD https://github.com/jc21/nginx-proxy-manager/archive/v${NGINX_PROXY_MANAGER_VERSION}.tar.gz /tmp/nginx-proxy-manager.tar.gz
 
-# Install and configure Nginx Proxy Manager.
+# Install and configure Nginx Proxy Manager
 RUN tar xzf nginx-proxy-manager.tar.gz \
     && mv nginx-proxy-manager-* nginx-proxy-manager \
     && cd nginx-proxy-manager \
